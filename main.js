@@ -22,14 +22,14 @@ const pigLatin = (word) => {
     if (myVowels.includes(word[0])) {
       return word + 'yay'
     } else if (myVowels.includes(word[1]))  {
-      subWord = word.substring(1);
-      startingLetter = word[0];
-      return subWord + startingLetter + 'ay'
+      let simpleWord = word.substring(1);
+      let startingLetter = word[0];
+      return simpleWord + startingLetter + 'ay'
     } else (myVowels.includes(word[2])); {
-      subWord2 = word.substring(2);
-      startingLetter = word[0];
-      secondLetter = word[1];
-      return subWord2 + startingLetter + secondLetter + 'ay'
+      let complexWord = word.substring(2);
+      let startingLetter = word[0];
+      let secondLetter = word[1];
+      return complexWord + startingLetter + secondLetter + 'ay'
     }
 
   }
