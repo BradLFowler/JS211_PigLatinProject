@@ -2,14 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <title>Translate A Word To Pig Latin</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="main.js"></script> -->
+    <script src="dom.js" defer></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <div class="whole-container">
+
+      <div class="container">
+        <header class="header">
+          <img src="./piggie.png" alt="piggie" class="header-icon" id="piggieButton" />
+          <h1 class="header-title">Pig Latin Translator</h1>
+        </header>
+
+        <textarea class="text-input" id="textInput"></textarea>
+        <div class="button-container">
+          <img src="./pigface.png" alt="" class="pig-button" id="pigButton" />
+
+          <div>
+            <button class="button" id="button">Oinkify!</button>
+            <button class="reset" id="reset">Reset</button>
+          </div>
+
+        </div>
+        <p class="text-output" id="textOutput"></p>
+      </div>
+    </div>
   </body>
 </html>
